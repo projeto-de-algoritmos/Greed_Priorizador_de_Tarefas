@@ -9,6 +9,10 @@
 | 20/2023743 | [Iago Sousa Matos Campelo](https://github.com/iagoscm)             |
 | 21/1043683 | [Marcus Vinícius Paiva Martins](https://github.com/marcusmartinss) |
 
+### Apresentação
+
+[Apresentação em Vídeo](./assets/Apresentacao_Greed.mp4)
+
 ## Sobre
 
 O Priorizador de Tarefas universitárias é uma aplicação web para verificar quais tarefas devem ser feitas antes do prazo de encerramento mais próximo.
