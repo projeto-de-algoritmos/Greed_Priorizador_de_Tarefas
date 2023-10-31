@@ -1,45 +1,50 @@
-**!! Atenção: Renomeie o seu repositório para (Tema)_(NomeDoProjeto). !!** 
+# Priorizador de Tarefas Universitárias
 
-Temas:
- - Grafos1
- - Grafos2
- - PD
- - D&C
- - Greed
- - Final 
- 
- **!! *Não coloque os nomes dos alunos no título do repositório*. Exemplo de título correto: Grafos2_Labirinto-do-Minotauro !!**
- 
- (Apague essa seção)
-
-# NomedoProjeto
-
-**Número da Lista**: X<br>
-**Conteúdo da Disciplina**: XXXXXXXXXX<br>
+**Conteúdo da Disciplina**: Greed<br>
 
 ## Alunos
-|Matrícula | Aluno |
-| -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
 
-## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+| Matrícula  | Aluno                                                              |
+| ---------- | ------------------------------------------------------------------ |
+| 20/2023743 | [Iago Sousa Matos Campelo](https://github.com/iagoscm)             |
+| 21/1043683 | [Marcus Vinícius Paiva Martins](https://github.com/marcusmartinss) |
+
+## Sobre
+
+O Priorizador de Tarefas universitárias é uma aplicação web para verificar quais tarefas devem ser feitas antes do prazo de encerramento mais próximo.
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
 
-## Instalação 
-**Linguagem**: xxxxxx<br>
-**Framework**: (caso exista)<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+![Responsividade Desktop](./assets/Responsividade-Desktop.png) <br>
 
-## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
+![Responsividade Tablet](./assets/Responsividade-Tablet.png) <br>
 
-## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
+![Responsividade Mobile](./assets/Responsividade-Mobile.png) <br>
 
 
+## Instalação
 
+**Linguagem**: HTML, CSS, Javascript<br>
+
+- Requisitos: Navegador web com suporte a HTML, CSS e Javascript.
+
+## Uso
+
+1. Abra o arquivo HTML no navegador
+
+2. Dê um nome à tarefa
+
+3. Coloque a data limite da tarefa
+
+4. Defina o horário limite da tarefa
+
+5. Escolha um tempo estimado (em horas) para a tarefa a ser realizada
+
+6. Adicione a tarefa
+
+7. Adicione outras tarefas
+
+8. Pressione "Priorizar Tarefas"
+
+9. As tarefes estarão priorizadas conforme a data de vencimento, as vencidas estarão em vermelho com o prefixo `[ATRASADO]`
 

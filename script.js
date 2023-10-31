@@ -53,25 +53,27 @@ function prioritizeTasks() {
     resultUl.innerHTML = '';
 
     const currentDate = new Date();
+    let currentTime = new Date();
 
     tasks.forEach((task) => {
         const isLate = task.date < currentDate;
         const formattedDate = task.date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric' });
-        let taskText = `${task.name} - ${formattedDate} - Estimated Duration: ${task.duration} hours`;
 
         if (isLate) {
-            taskText = `[ATRASADO] ${taskText}`;
+            resultUl.innerHTML += `<li style="color: red;">[ATRASADO] ${task.name} - ${formattedDate} - Duração estimada: ${task.duration} horas</li>`;
+        } else {
+            resultUl.innerHTML += `<li>${task.name} - ${formattedDate} - Duração estimada: ${task.duration} horas</li>`;
         }
 
-        const taskColor = isLate ? 'red' : 'black';
+        const startTime = currentTime;
+        const endTime = new Date(currentTime.getTime() + task.duration * 60 * 60 * 1000);
 
-        resultUl.innerHTML += `<li style="color: ${taskColor};">${taskText}</li>`;
+        if (isLate) {
+            resultUl.innerHTML += `<li style="color: red;"> Agendado de ${startTime.toLocaleTimeString()} até ${endTime.toLocaleTimeString()}</li>`;
+        } else {
+            resultUl.innerHTML += `<li>Agendado de ${startTime.toLocaleTimeString()} até ${endTime.toLocaleTimeString()}</li>`;
+        }
 
-        const startTime = currentDate < task.date ? task.date : currentDate;
-        const endTime = new Date(startTime.getTime() + task.duration * 60 * 60 * 1000);
-        resultUl.innerHTML += `<li>Scheduled from ${startTime.toLocaleTimeString()} to ${endTime.toLocaleTimeString()}</li>`;
-
-        currentDate.setTime(endTime.getTime());
+        currentTime = endTime;
     });
 }
-
